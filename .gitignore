@@ -1,0 +1,4 @@
+.idea
+.idea/*
+/config.js
+node_modules
