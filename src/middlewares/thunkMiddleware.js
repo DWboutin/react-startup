@@ -1,12 +1,4 @@
-/**
- * Middleware qui permet d'utiliser dispatch à l'intérieur d'actions
- * @function
- * @param {object} store Store de l'application
- * @param {function} next Pour la continuation des opérations
- * @param {function} action Nouvel action à dispatch
- * @return {function} L'action à dispatch
- */
-export const thunkMiddleware = store => next => action => {
+const thunkMiddleware = store => next => action => {
   if (typeof action !== 'function') {
     // Normal action, pass it on
     return next(action);
@@ -15,3 +7,5 @@ export const thunkMiddleware = store => next => action => {
 
   return result;
 };
+
+export default thunkMiddleware;

@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 
 # Install app dependencies
 COPY package.json /usr/src/app/
-RUN npm install -g babel-cli babel-core babel-runtime babel-register browserify
+RUN npm install -g babel-cli babel-core babel-runtime babel-register babel-eslint browserify gulp eslint
 RUN npm install
 
 # Bundle app source

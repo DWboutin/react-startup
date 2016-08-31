@@ -4,7 +4,7 @@ import { match, RouterContext } from 'react-router';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 
-import { thunkMiddleware } from 'middlewares/thunkMiddleware';
+import thunkMiddleware from 'middlewares/thunkMiddleware';
 
 import Html from 'src/Html.react';
 
