@@ -7,6 +7,7 @@
       { "src": "./src/config.js", "expose": "config" },
       { "src": "./src/middlewares", "expose": "middlewares" },
       { "src": "./src/components", "expose": "components" },
+      { "src": "./src/reducers", "expose": "reducers" },
     ]]
   ]
 }
