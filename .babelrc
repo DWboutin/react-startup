@@ -3,7 +3,10 @@
   "plugins": [
     ["module-alias", [
       { "src": "./src", "expose": "src" },
+      { "src": "./src/routes.js", "expose": "routes" },
       { "src": "./src/config.js", "expose": "config" },
+      { "src": "./src/middlewares", "expose": "middlewares" },
+      { "src": "./src/components", "expose": "components" },
     ]]
   ]
 }
