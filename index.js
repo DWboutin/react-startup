@@ -4,4 +4,6 @@ require('babel-core/register')({
 
 process.env.ROOT_FOLDER = __dirname;
 
+require('./intl');
+
 require('./src/server');
