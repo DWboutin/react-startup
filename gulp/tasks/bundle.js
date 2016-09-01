@@ -23,7 +23,7 @@ const { bundler, browserSync } = settings;
  */
 let bundleTask = () => {
 
-  gulp.task('bundle', ['lint'], () => {
+  gulp.task('bundle', () => {
     return bundler.bundle()
       .on('error', console.log)
       .pipe(source('app.min.js'))

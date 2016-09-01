@@ -18,6 +18,7 @@ function Html(props) {
         <title>{ APP_NAME }</title>
         <link rel="icon" href={"/assets/img/favicon.ico"} />
         <script dangerouslySetInnerHTML={{ __html: 'window.__INITIAL_STATE__ = ' + initialState + '; window.__CONFIG__ = ' + configs }} />
+        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en,~locale.fr" />
       </head>
       <body>
         <div id={ APP_DOM_CONTAINER } dangerouslySetInnerHTML={{ __html: renderToString(component) }} />
